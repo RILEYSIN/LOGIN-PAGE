@@ -1,0 +1,134 @@
+html {
+  background-image: url(robot.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sign-up-card {
+  /* Keep other styles, but adjust the grid layout for the first name and last name */
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 400px; /* Added a max-width to control the card width */
+  margin: 20px auto; /* Centered the card horizontally and added some top/bottom margin */
+  padding: 30px; /* Reduced padding for a cleaner look */
+  border-radius: 8px; /* Slightly less rounded corners */
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
+  display: grid;
+  gap: 10px; /* Adjust vertical spacing between elements */
+}
+
+.name-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+  gap: 10px; /* Spacing between the first and last name inputs */
+}
+
+.name-inputs > input {
+  width: 100%; /* Make each input take the full width of its column */
+  height: 40px; /* Adjust height */
+  padding: 8px 12px; /* Adjust padding inside the input */
+  border: 1px solid #ccc; /* Lighter border */
+  border-radius: 4px; /* Less rounded corners */
+  font-family: inherit;
+  font-size: 14px; /* Adjust font size */
+  transition: border-color 0.3s ease;
+}
+
+.name-inputs > input:focus {
+  outline: none;
+  border-color: #1877f2; /* Facebook's blue on focus */
+}
+
+.sign-up-card > input[type="date"],
+.sign-up-card > input[type="text"],
+.sign-up-card > input[type="password"] {
+  width: 100%;
+  height: 40px; /* Adjust height */
+  padding: 8px 12px; /* Adjust padding */
+  border: 1px solid #ccc; /* Lighter border */
+  border-radius: 4px; /* Less rounded corners */
+  font-family: inherit;
+  font-size: 14px; /* Adjust font size */
+  transition: border-color 0.3s ease;
+}
+
+.sign-up-card > input[type="date"]:focus,
+.sign-up-card > input[type="text"]:focus,
+.sign-up-card > input[type="password"]:focus {
+  outline: none;
+  border-color: #1877f2; /* Facebook's blue on focus */
+}
+
+.sign-up-card > label {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.sign-up-card > input[type="radio"] {
+  margin-right: 3px;
+}
+
+/* Adjust the container for the name inputs in your form */
+.sign-up-card > form {
+  display: grid;
+  gap: 10px; /* Adjust vertical spacing between form elements */
+}
+
+/* Style the date input to take full width */
+.sign-up-card > form > input[type="date"] {
+  width: 100%;
+}
+
+/* Style the gender options */
+.sign-up-card > form > div {
+  /* You might need to wrap the radio buttons and labels in a div */
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sign-up-card a {
+  color: #1877f2; /* Facebook's blue for links */
+  font-size: 0.9rem;
+  text-align: center; /* Center the login link */
+  text-decoration: none;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.sign-up-card a:hover {
+  text-decoration: underline;
+}
+
+.sign-up-card > button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  height: 40px; /* Adjust button height */
+  padding: 10px 16px;
+  border-radius: 6px; /* Slightly less rounded button */
+  background: #28a745; /* A green similar to the target */
+  color: white;
+  border: none;
+  font-family: inherit;
+  font-size: 16px; /* Adjust font size */
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.sign-up-card > button[type="submit"]:hover {
+  background-color: #1e7e34; /* Darker green on hover */
+}
+
+.sign-up-card h4,
+.sign-up-card h5 {
+  color: #65676b; /* Grey text color */
+  font-size: 0.85rem;
+  margin-top: 15px;
+}
+
+.sign-up-card h4 a {
+  color: #1877f2;
+}

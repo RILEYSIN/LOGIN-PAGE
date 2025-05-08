@@ -114,6 +114,8 @@ gin-form > button {
 @media (width >= 500px) {
   body {
     padding: 0;
+    background-image: url(robot.jfif);
+    background-repeat: no-repeat;
   }
   .login-card {
     margin: 0;
